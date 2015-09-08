@@ -2,12 +2,13 @@ package com.jarkyn;
 
 public class Romanizer {
     public static String convert(int arabic) {
+        String roman = "";
         if (arabic == 1) {
-            return "I";
+            roman = "I";
         }
         if (arabic == 2) {
-            return "II";
+            roman = "II";
         }
-        return "";
+        return roman;
     }
 }
