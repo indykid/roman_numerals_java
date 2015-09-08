@@ -13,4 +13,9 @@ public class RomanizerTest {
     public void convertsOne() {
         assertEquals("I", Romanizer.convert(1));
     }
+
+    @Test
+    public void convertsTwo() {
+        assertEquals("II", Romanizer.convert(2));
+    }
 }
