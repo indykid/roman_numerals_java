@@ -50,4 +50,9 @@ public class RomanizerTest {
     public void convertsFifteen() {
         assertEquals("XV", convert(15));
     }
+
+    @Test
+    public void convertsTwenty() {
+        assertEquals("XX", convert(20));
+    }
 }

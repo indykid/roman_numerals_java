@@ -3,7 +3,7 @@ package com.jarkyn;
 public class Romanizer {
     public static String convert(int arabic) {
         String roman = "";
-        if (arabic >= 10) {
+        while (arabic >= 10) {
             roman += "X";
             arabic -= 10;
         }
