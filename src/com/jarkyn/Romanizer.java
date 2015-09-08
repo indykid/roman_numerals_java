@@ -1,19 +1,26 @@
 package com.jarkyn;
 
 public class Romanizer {
+    enum Numeral {
+        X(10),
+        V(5),
+        I(1),
+        ;
+
+        private int arabicValue;
+
+        Numeral(int value){
+            arabicValue = value;
+        }
+    }
+
     public static String convert(int arabic) {
         String roman = "";
-        while (arabic >= 10) {
-            roman += "X";
-            arabic -= 10;
-        }
-        while (arabic >= 5) {
-            roman += "V";
-            arabic -= 5;
-        }
-        while (arabic >= 1) {
-            roman += "I";
-            arabic -= 1;
+        for ( Numeral numeral : Numeral.values()) {
+            while (arabic >= numeral.arabicValue) {
+                roman += numeral.toString();
+                arabic -= numeral.arabicValue;
+            }
         }
         return roman;
     }
