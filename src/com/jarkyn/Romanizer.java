@@ -7,7 +7,7 @@ public class Romanizer {
             roman += "X";
             arabic -= 10;
         }
-        if (arabic >= 5) {
+        while (arabic >= 5) {
             roman += "V";
             arabic -= 5;
         }
