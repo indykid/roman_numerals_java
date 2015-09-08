@@ -43,4 +43,9 @@ public class RomanizerTest {
     public void convertsTen() {
         assertEquals("X", Romanizer.convert(10));
     }
+
+    @Test
+    public void convertsFifteen() {
+        assertEquals("XV", Romanizer.convert(15));
+    }
 }
