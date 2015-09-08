@@ -1,51 +1,53 @@
 package com.jarkyn;
 
 import org.junit.Test;
+
+import static com.jarkyn.Romanizer.convert;
 import static org.junit.Assert.*;
 
 public class RomanizerTest {
     @Test
     public void convertsZero() {
-        assertEquals("", Romanizer.convert(0));
+        assertEquals("", convert(0));
     }
 
     @Test
     public void convertsOne() {
-        assertEquals("I", Romanizer.convert(1));
+        assertEquals("I", convert(1));
     }
 
     @Test
     public void convertsTwo() {
-        assertEquals("II", Romanizer.convert(2));
+        assertEquals("II", convert(2));
     }
 
     @Test
     public void convertsThree() {
-        assertEquals("III", Romanizer.convert(3));
+        assertEquals("III", convert(3));
     }
 
     @Test
     public void convertsFive() {
-        assertEquals("V", Romanizer.convert(5));
+        assertEquals("V", convert(5));
     }
 
     @Test
     public void convertsSix() {
-        assertEquals("VI", Romanizer.convert(6));
+        assertEquals("VI", convert(6));
     }
 
     @Test
     public void convertEight() {
-        assertEquals("VIII", Romanizer.convert(8));
+        assertEquals("VIII", convert(8));
     }
 
     @Test
     public void convertsTen() {
-        assertEquals("X", Romanizer.convert(10));
+        assertEquals("X", convert(10));
     }
 
     @Test
     public void convertsFifteen() {
-        assertEquals("XV", Romanizer.convert(15));
+        assertEquals("XV", convert(15));
     }
 }
