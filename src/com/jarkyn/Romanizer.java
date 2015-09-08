@@ -11,8 +11,9 @@ public class Romanizer {
             roman += "V";
             arabic -= 5;
         }
-        for (int times = 0; times < arabic; times++) {
-            roman += 'I';
+        while (arabic >= 1) {
+            roman += "I";
+            arabic -= 1;
         }
         return roman;
     }
