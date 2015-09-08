@@ -3,7 +3,9 @@ package com.jarkyn;
 public class Romanizer {
     enum Numeral {
         X(10),
+        IX(9),
         V(5),
+        IV(4),
         I(1),
         ;
 

@@ -55,4 +55,14 @@ public class RomanizerTest {
     public void convertsTwenty() {
         assertEquals("XX", convert(20));
     }
+
+    @Test
+    public void convertsFour() {
+        assertEquals("IV", convert(4));
+    }
+
+    @Test
+    public void convertsNine() {
+        assertEquals("IX", convert(9));
+    }
 }
