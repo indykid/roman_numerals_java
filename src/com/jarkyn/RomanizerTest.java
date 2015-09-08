@@ -33,4 +33,14 @@ public class RomanizerTest {
     public void convertsSix() {
         assertEquals("VI", Romanizer.convert(6));
     }
+
+    @Test
+    public void convertEight() {
+        assertEquals("VIII", Romanizer.convert(8));
+    }
+
+    @Test
+    public void convertsTen() {
+        assertEquals("X", Romanizer.convert(10));
+    }
 }
