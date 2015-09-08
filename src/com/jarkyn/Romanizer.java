@@ -9,6 +9,9 @@ public class Romanizer {
         if (arabic == 2) {
             roman = "II";
         }
+        if (arabic == 3) {
+            roman = "III";
+        }
         return roman;
     }
 }
