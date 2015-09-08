@@ -1,9 +1,8 @@
 package com.jarkyn;
 
 import org.junit.Test;
-
-import static com.jarkyn.Romanizer.convert;
 import static org.junit.Assert.*;
+import static com.jarkyn.Romanizer.convert;
 
 public class RomanizerTest {
     @Test
@@ -64,5 +63,30 @@ public class RomanizerTest {
     @Test
     public void convertsNine() {
         assertEquals("IX", convert(9));
+    }
+
+    @Test
+    public void convertsFifty() {
+        assertEquals("L", convert(50));
+    }
+
+    @Test
+    public void convertsHundred() {
+        assertEquals("C", convert(100));
+    }
+
+    @Test
+    public void convertsForty() {
+        assertEquals("XL", convert(40));
+    }
+
+    @Test
+    public void convertsNinety() {
+        assertEquals("XC", convert(90));
+    }
+
+    @Test
+    public void convertsThreeHundredNinetyNine() {
+        assertEquals("CCCXCIX", convert(399));
     }
 }
