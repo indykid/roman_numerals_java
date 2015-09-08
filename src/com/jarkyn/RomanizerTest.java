@@ -28,4 +28,9 @@ public class RomanizerTest {
     public void convertsFive() {
         assertEquals("V", Romanizer.convert(5));
     }
+
+    @Test
+    public void convertsSix() {
+        assertEquals("VI", Romanizer.convert(6));
+    }
 }
